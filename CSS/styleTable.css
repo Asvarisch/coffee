@@ -1,0 +1,92 @@
+/*any elements will have margin = 0*/
+* {
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    /*2*/
+    /*box-sizing: border-box;*/
+    height: 400px;
+    background-image: url("../Images/coffee-bgnd.jpeg");
+    background-position: center;
+    /*background-size: cover;*/
+    /*1*/
+    /*border-top: 1px solid;*/
+    /*2*/
+    /*padding-top: 130px;*/
+
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgba(3,150,100,0.75);
+    text-align: center;
+    /*1*/
+    /*margin-top: 130px;*/
+    /*3*/
+    padding-top: 130px;
+}
+
+/* > for concrete children*/
+.main > table {
+    /*delete dots*/
+    list-style: none;
+    padding: 0;
+}
+/*space for offsprings*/
+.main td {
+    /*1-vertical : 2-horizontal*/
+    margin: 100px 0;
+    border-bottom: 1px solid #e4bb97;
+    padding-bottom: 60px;
+}
+/*combination of space and > */
+.main td > h2 {
+    font-weight: 600;
+    font-size: 28px;
+    background-color: #aa8eb5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main td > p {
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    /*абзац - отступ*/
+    text-indent: 32px;
+    /*equally spread over block size*/
+    text-align: justify;
+    /*межстрочный интервал*/
+    line-height: 1.5;
+
+}
+
+/*order of a must be like bellow, might skip unnecessary*/
+a:link {
+    color: #214e14;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*межсимвольный интервал*/
+    letter-spacing: 2px;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
